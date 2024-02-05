@@ -16,7 +16,7 @@ jobs:
         id: create_release
         uses: actions/create-release@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: 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 # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
